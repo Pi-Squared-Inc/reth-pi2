@@ -37,6 +37,11 @@ futures-util.workspace = true
 metrics = { workspace = true, optional = true }
 parking_lot = { workspace = true, optional = true }
 
+# io
+serde_json.workspace = true
+
+file-rotate = "0.7.6"
+
 [dev-dependencies]
 parking_lot.workspace = true
 reth-ethereum-forks.workspace = true
