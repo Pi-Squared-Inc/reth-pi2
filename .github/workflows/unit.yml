@@ -48,7 +48,7 @@ jobs:
             total_partitions: 1
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: rui314/setup-mold@v1
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
@@ -76,9 +76,9 @@ jobs:
       RUST_BACKTRACE: 1
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Checkout ethereum/tests
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ethereum/tests
           ref: 59781f1c6cce3d6c161751ab3512d79fa75d5597
@@ -101,7 +101,7 @@ jobs:
       RUST_BACKTRACE: 1
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: rui314/setup-mold@v1
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
